@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pradeep | Portfolio</title>
+    <meta name="description" content="High-performance, modern portfolio website for Pradeep featuring advanced UI/UX principles.">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="bg-gradient-1"></div>
+    <div class="bg-gradient-2"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar glassmorphism">
+        <div class="nav-content container">
+            <a href="#" class="logo">Pradeep<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact" class="btn-primary">Contact</a></li>
+                <li><button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button></li>
+            </ul>
+            <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero container">
+        <div class="hero-content fade-in">
+            <h2 class="greeting">Hello, I'm</h2>
+            <h1 class="name glow-text">Pradeep</h1>
+            <h3 class="typing-container">
+                <span id="typed-text"></span><span class="cursor">|</span>
+            </h3>
+            <p class="hero-desc">Building digital experiences with advanced UI/UX principles, modern web technologies, and a passion for creative solutions.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn-primary">View My Work</a>
+                <a href="assets/Pradeep_Resume (1).pdf" target="_blank" class="btn-secondary"><i class="fas fa-download"></i> Resume</a>
+            </div>
+        </div>
+        <div class="hero-image-container fade-in">
+            <div class="hero-image-wrapper">
+                <img src="assets/profile.jpg" alt="Pradeep" class="hero-profile-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about container section-padding">
+        <h2 class="section-title slide-up">About <span>Me</span></h2>
+        <div class="about-content slide-up">
+            <div class="about-image glassmorphism">
+                <img src="assets/profile.jpg" alt="Pradeep" class="profile-img">
+            </div>
+            <div class="about-text glassmorphism">
+                <p>I am a passionate BCA student and developer focused on crafting clean, user-friendly, and high-performance digital experiences. I specialize in turning complex problems into simple, beautiful, and intuitive designs.</p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h4 class="counter" data-target="10">0</h4>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4 class="counter" data-target="3">0</h4>
+                        <p>Years Learning</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills container section-padding">
+        <h2 class="section-title slide-up">My <span>Skills</span></h2>
+        <div class="skills-grid">
+            <div class="skill-category glassmorphism slide-up">
+                <h3>Frontend</h3>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>HTML/CSS</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress" data-width="90%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>JavaScript</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress" data-width="85%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>React</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress" data-width="75%"></div></div>
+                </div>
+            </div>
+            <div class="skill-category glassmorphism slide-up" style="transition-delay: 0.2s">
+                <h3>Design & Tools</h3>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>UI/UX Design</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress" data-width="80%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Figma</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress" data-width="85%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Git/GitHub</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress" data-width="80%"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects container section-padding">
+        <h2 class="section-title slide-up">Featured <span>Projects</span></h2>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card glassmorphism slide-up">
+                <div class="project-img">
+                    <div class="img-placeholder"><i class="fas fa-laptop-code"></i></div>
+                </div>
+                <div class="project-info">
+                    <h3>E-Commerce Dashboard</h3>
+                    <p>A modern dashboard with dark mode, data visualization, and complex state management.</p>
+                    <div class="tech-stack">
+                        <span>React</span><span>CSS Grid</span><span>Chart.js</span>
+                    </div>
+                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card glassmorphism slide-up" style="transition-delay: 0.1s">
+                <div class="project-img">
+                    <div class="img-placeholder"><i class="fas fa-mobile-alt"></i></div>
+                </div>
+                <div class="project-info">
+                    <h3>Task Management App</h3>
+                    <p>A sleek mobile-first task manager featuring drag-and-drop interactions and local storage.</p>
+                    <div class="tech-stack">
+                        <span>JavaScript</span><span>HTML5</span><span>CSS3</span>
+                    </div>
+                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-card glassmorphism slide-up" style="transition-delay: 0.2s">
+                <div class="project-img">
+                    <div class="img-placeholder"><i class="fas fa-paint-brush"></i></div>
+                </div>
+                <div class="project-info">
+                    <h3>Portfolio Template</h3>
+                    <p>A premium, customizable portfolio template designed for creative professionals.</p>
+                    <div class="tech-stack">
+                        <span>HTML/CSS</span><span>JS Animations</span>
+                    </div>
+                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education container section-padding">
+        <h2 class="section-title slide-up">My <span>Journey</span></h2>
+        <div class="timeline">
+            <div class="timeline-item slide-up">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glassmorphism">
+                    <span class="date">Present</span>
+                    <h3>Bachelor of Computer Applications (BCA)</h3>
+                    <p>Currently pursuing degree, focusing on software development, algorithms, and web technologies. Building practical skills through comprehensive projects.</p>
+                </div>
+            </div>
+            <div class="timeline-item slide-up">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glassmorphism">
+                    <span class="date">2023</span>
+                    <h3>Web Development Bootcamp</h3>
+                    <p>Completed intensive training in modern frontend technologies including responsive design, JavaScript frameworks, and UI/UX fundamentals.</p>
+                </div>
+            </div>
+            <div class="timeline-item slide-up">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glassmorphism">
+                    <span class="date">2022</span>
+                    <h3>Pre-University Education</h3>
+                    <p>Developed strong foundational knowledge in science and mathematics, sparking an interest in computer science and problem solving.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact container section-padding">
+        <h2 class="section-title slide-up">Get In <span>Touch</span></h2>
+        <div class="contact-content">
+            <div class="contact-info glassmorphism slide-up">
+                <h3>Let's build something amazing together!</h3>
+                <p>Whether you have a question, a project idea, or just want to say hi, my inbox is always open.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@pradeep.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Bangalore, India</span>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <form class="contact-form glassmorphism slide-up" style="transition-delay: 0.2s">
+                <div class="input-group">
+                    <input type="text" id="name" required placeholder=" ">
+                    <label for="name">Your Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" required placeholder=" ">
+                    <label for="email">Your Email</label>
+                </div>
+                <div class="input-group">
+                    <textarea id="message" required placeholder=" " rows="5"></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+                <button type="submit" class="btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 Pradeep. Designed & Built with passion.</p>
+        </div>
+    </footer>
+
+    <!-- Voice Command UI -->
+    <div id="voice-container">
+        <div id="voice-status" class="glassmorphism hidden">Say "Help" for commands</div>
+        <button id="voice-btn" class="glassmorphism" aria-label="Voice Commands">
+            <i class="fas fa-microphone"></i>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
